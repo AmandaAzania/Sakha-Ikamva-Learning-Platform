@@ -3,6 +3,7 @@ import Communication from './pages/Communication'
 import Reading from './pages/Reading'
 import Writing from './pages/Writing'
 import Mathematics from './pages/Mathematics'
+import CreativeLearning from './pages/CreativeLearning'
 import { useState } from 'react'
 import {
   Sprout,
@@ -311,12 +312,17 @@ function App() {
           <Mathematics onBack={() => navigate('home')} />
         )}
 
+        {activePage === 'creative' && (
+          <CreativeLearning onBack={() => navigate('home')} />
+        )}
+
         {selectedModule &&
           activePage !== 'confidence' &&
           activePage !== 'communication' &&
           activePage !== 'reading' &&
           activePage !== 'writing' &&
-          activePage !== 'mathematics' && (
+          activePage !== 'mathematics' &&
+          activePage !== 'creative' && (
           <section className="content-panel">
             <div className={`module-icon ${selectedModule.color}`}>
               <selectedModule.icon size={32} />
