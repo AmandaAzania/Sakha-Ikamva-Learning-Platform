@@ -4,6 +4,7 @@ import Reading from './pages/Reading'
 import Writing from './pages/Writing'
 import Mathematics from './pages/Mathematics'
 import CreativeLearning from './pages/CreativeLearning'
+import AIAssistant from './pages/AIAssistant'
 import { useState } from 'react'
 import {
   Sprout,
@@ -354,16 +355,7 @@ function App() {
         )}
 
         {activePage === 'assistant' && (
-          <section className="content-panel">
-            <Sparkles size={36} />
-            <h1>My Learning Assistant</h1>
-            <p>Learning support, one step at a time.</p>
-
-            <div className="notice">
-              This is a demonstration. Live AI integration is not
-              enabled yet.
-            </div>
-          </section>
+          <AIAssistant onBack={() => navigate('home')} />
         )}
 
         {activePage === 'progress' && (

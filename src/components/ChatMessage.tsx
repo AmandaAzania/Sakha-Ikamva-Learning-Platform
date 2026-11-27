@@ -1,0 +1,2 @@
+import type { Message } from '../types/assistant'
+export default function ChatMessage({message,onRead}:{message:Message;onRead:(text:string)=>void}) {return <article className={`ai-message ${message.role}`}><strong>{message.role==='assistant'?'Learning assistant · Demo':'You'}</strong><p>{message.text}</p><button className="secondary-button" onClick={()=>onRead(message.text)}>Listen</button></article>}
