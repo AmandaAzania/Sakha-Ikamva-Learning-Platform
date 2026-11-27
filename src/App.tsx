@@ -1,5 +1,6 @@
 import Confidence from './pages/Confidence'
 import Communication from './pages/Communication'
+import Reading from './pages/Reading'
 import { useState } from 'react'
 import {
   Sprout,
@@ -296,9 +297,14 @@ function App() {
           <Communication onBack={() => navigate('home')} />
         )}
 
+        {activePage === 'reading' && (
+          <Reading onBack={() => navigate('home')} />
+        )}
+
         {selectedModule &&
           activePage !== 'confidence' &&
-          activePage !== 'communication' && (
+          activePage !== 'communication' &&
+          activePage !== 'reading' && (
           <section className="content-panel">
             <div className={`module-icon ${selectedModule.color}`}>
               <selectedModule.icon size={32} />

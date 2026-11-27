@@ -1,0 +1,289 @@
+
+/* ========================================
+   MY READING JOURNEY
+======================================== */
+
+.reading-page {
+  --reading-gold: #e5bc60;
+  --reading-light: #f6ebd4;
+  --reading-dark: #76551f;
+}
+
+/* HERO */
+
+.reading-hero {
+  background: linear-gradient(
+    135deg,
+    #194d35 0%,
+    #385b3c 65%,
+    #796331 100%
+  );
+}
+
+/* ACTIVITY CARDS */
+
+.reading-page .journey-card:nth-child(1) {
+  background: #f6ebd4;
+}
+
+.reading-page .journey-card:nth-child(2) {
+  background: #e3ebf7;
+}
+
+.reading-page .journey-card:nth-child(3) {
+  background: #e4efe0;
+}
+
+.reading-page .journey-card:nth-child(4) {
+  background: #efe4f5;
+}
+
+.reading-page .journey-card:nth-child(5) {
+  background: #f4e5d9;
+}
+
+.reading-page .journey-card:nth-child(6) {
+  background: #dfede9;
+}
+
+.reading-page .journey-card:nth-child(7) {
+  background: #e3ebf7;
+}
+
+.reading-page .journey-card:nth-child(8) {
+  background: #f6ebd4;
+}
+
+.reading-card-top,
+.reading-card-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.reading-card-top > span {
+  color: #65756b;
+  font-weight: 700;
+  font-size: 0.85em;
+}
+
+.reading-card-action {
+  margin-top: auto;
+  padding-top: 16px;
+  font-weight: 700;
+  color: #194d35;
+}
+
+.reading-page .progress-fill {
+  background: linear-gradient(
+    90deg,
+    #b58b39,
+    #e5bc60
+  );
+}
+
+/* ACTIVITY SECTIONS */
+
+.reading-section {
+  margin-top: 30px;
+}
+
+.reading-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.35em;
+  line-height: 1.6;
+}
+
+.reading-section > p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.reading-section .activity-options {
+  margin-top: 24px;
+}
+
+.reading-question-counter {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-bottom: 18px;
+  background: #f6ebd4;
+  color: #76551f;
+  border-radius: 30px;
+  font-size: 0.85em;
+  font-weight: 700;
+}
+
+/* FEEDBACK */
+
+.reading-feedback {
+  margin: 24px 0;
+  padding: 24px;
+  background: #e4efe0;
+  border: 1px solid #cbdcc7;
+  border-radius: 18px;
+  color: #194d35;
+}
+
+.reading-feedback h3 {
+  margin-bottom: 12px;
+}
+
+.reading-feedback p {
+  margin-bottom: 14px;
+  line-height: 1.8;
+}
+
+/* SENTENCE BUILDER */
+
+.reading-word-bank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.reading-word {
+  padding: 14px 22px;
+  background: #f6ebd4;
+  border: 2px solid #e4d5b6;
+  border-radius: 12px;
+  color: #59451e;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.reading-word:hover {
+  background: #ecddb9;
+}
+
+.reading-word-selected {
+  background: #194d35;
+  color: #ffffff;
+  border-color: #194d35;
+}
+
+.reading-word-selected:hover {
+  background: #285c42;
+}
+
+.reading-sentence-builder {
+  padding: 26px;
+  margin: 24px 0;
+  background: #f5f7f3;
+  border: 2px dashed #cbd9c6;
+  border-radius: 18px;
+}
+
+.reading-sentence-builder h3 {
+  color: #194d35;
+  margin-bottom: 16px;
+}
+
+.reading-sentence-builder p {
+  min-height: 60px;
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+
+/* REFLECTION */
+
+.reading-prompts {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+.reading-prompt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px;
+  background: #f6ebd4;
+  color: #59451e;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+.reading-skip {
+  margin-top: 24px;
+}
+
+/* ACCESSIBILITY */
+
+.reading-page button:focus-visible,
+.reading-page textarea:focus-visible {
+  outline: 3px solid #345c83;
+  outline-offset: 4px;
+}
+
+.reading-page button:disabled {
+  cursor: not-allowed;
+}
+
+.high-contrast .reading-hero,
+.high-contrast .reading-page .journey-card,
+.high-contrast .reading-feedback,
+.high-contrast .reading-word,
+.high-contrast .reading-prompt,
+.high-contrast .reading-question-counter,
+.high-contrast .reading-sentence-builder {
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.high-contrast .reading-word-selected {
+  border-color: #ffff00;
+  color: #ffff00;
+}
+
+.high-contrast .reading-card-top > span,
+.high-contrast .reading-card-action,
+.high-contrast .reading-sentence-builder h3,
+.high-contrast .reading-page .journey-details h3,
+.high-contrast .reading-page .journey-details p {
+  color: #ffffff;
+}
+
+.high-contrast .reading-page :focus-visible {
+  outline-color: #ffff00;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+  .reading-section h2 {
+    font-size: 1.15em;
+  }
+
+  .reading-feedback,
+  .reading-sentence-builder {
+    padding: 18px;
+  }
+
+  .reading-word {
+    padding: 12px 16px;
+  }
+
+  .reading-word-bank {
+    gap: 10px;
+  }
+
+  .reading-card-action {
+    font-size: 0.9em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reading-page *,
+  .reading-page *::before,
+  .reading-page *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
