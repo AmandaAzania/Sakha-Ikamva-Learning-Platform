@@ -1,0 +1,2 @@
+import './CreativeWorkspace.css'
+export default function CreativeWorkspace({reflection=false}:{reflection?:boolean}){return <div className="creative-tool"><p>Optional notes. Use fictional examples; notes are not saved.</p>{(reflection?['What did I discover?','What helped me learn?','What would I try next?']:['What challenge could we solve?','Who could benefit?','What is my idea?','How could I test it safely?']).map(p=><label key={p}>{p}<textarea rows={3} /></label>)}</div>}

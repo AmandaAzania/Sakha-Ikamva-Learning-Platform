@@ -1,0 +1,3 @@
+import {useState} from 'react'
+const steps=['Plant the seed','Water the soil','Prepare the soil']
+export default function PuzzleBlocks(){const [order,setOrder]=useState<string[]>([]);return <div className="creative-tool"><h3>Plant a seed: choose the steps in order</h3>{steps.map(s=><button key={s} disabled={order.includes(s)} onClick={()=>setOrder([...order,s])}>{s}</button>)}<ol>{order.map(s=><li key={s}>{s}</li>)}</ol><p role="status">{order.length===3?(order.join('|')==='Prepare the soil|Plant the seed|Water the soil'?'Great! Your sequence makes sense.':'Try preparing the soil first.'):'Choose the next step.'}</p><button onClick={()=>setOrder([])}>Reset</button></div>}
