@@ -1,0 +1,14 @@
+.writing-workspace { margin: 24px 0; padding: 24px; background: #fff; border: 1px solid #ddd5e5; border-radius: 20px; display: grid; gap: 16px; }
+.writing-workspace h2,.writing-workspace h3 { color: #514263; }
+.writing-plans,.writing-settings { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; }
+.writing-workspace label:not(.writing-check) { display: grid; gap: 8px; font-weight: 600; }
+.writing-workspace textarea,.writing-workspace select { width: 100%; padding: 12px; border: 1px solid #a99bb8; border-radius: 10px; font: inherit; color: #292532; }
+.writing-workspace textarea { resize: vertical; line-height: 1.8; }
+.writing-check { display: flex; align-items: center; gap: 10px; }
+.writing-check input { width: 20px; height: 20px; accent-color: #514263; flex-shrink: 0; }
+.writing-starters { display: flex; flex-wrap: wrap; gap: 10px; }
+.paper-white { background: #fff; }.paper-cream { background: #fff5df; }.paper-lavender { background: #efe4f5; }.paper-blue { background: #e4eef9; }
+.large-text .writing-paper { font-size: 1.6rem !important; }
+.high-contrast .writing-workspace,.high-contrast .writing-workspace textarea,.high-contrast .writing-workspace select { background: #000; color: #fff; border-color: #fff; }
+.high-contrast .writing-workspace h2,.high-contrast .writing-workspace h3 { color: #fff; }
+@media(max-width:600px) { .writing-plans,.writing-settings { grid-template-columns: 1fr; }.writing-workspace { padding: 15px; } }

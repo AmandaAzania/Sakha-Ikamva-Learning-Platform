@@ -1,0 +1,16 @@
+.writing-page .writing-hero { background: linear-gradient(135deg,#514263,#735b87); }
+.writing-page .journey-card:nth-child(4n+1) { background:#efe4f5; }
+.writing-page .journey-card:nth-child(4n+2) { background:#e3ebf7; }
+.writing-page .journey-card:nth-child(4n+3) { background:#f6ebd4; }
+.writing-page .journey-card:nth-child(4n+4) { background:#e4efe0; }
+.writing-card-top,.writing-card-action { display:flex; align-items:center; justify-content:space-between; width:100%; gap:12px; }
+.writing-card-action { margin-top:auto; padding-top:16px; font-weight:700; color:#514263; }
+.writing-page .progress-fill { background:#8a6ca5; }
+.writing-question { margin-top:24px; }
+.writing-feedback { margin:20px 0; padding:20px; border-radius:14px; background:#e4efe0; color:#194d35; }
+.writing-page :focus-visible { outline:3px solid #345c83; outline-offset:3px; }
+.writing-page button:disabled { opacity:.6; cursor:not-allowed; }
+.high-contrast .writing-page .writing-hero,.high-contrast .writing-page .journey-card,.high-contrast .writing-feedback { background:#000; color:#fff; border:2px solid #fff; }
+.high-contrast .writing-card-action { color:#fff; }
+.high-contrast .writing-page :focus-visible { outline-color:#ff0; }
+@media(prefers-reduced-motion:reduce) { .writing-page * { animation:none!important; transition:none!important; } }
