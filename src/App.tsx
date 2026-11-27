@@ -1,4 +1,4 @@
-
+import Confidence from './pages/Confidence'
 import { useState } from 'react'
 import {
   Sprout,
@@ -283,7 +283,11 @@ function App() {
           </>
         )}
 
-        {selectedModule && (
+        {activePage === 'confidence' && (
+  <Confidence onBack={() => navigate('home')} />
+)}
+
+{selectedModule && activePage !== 'confidence' && (
           <section className="content-panel">
             <div className={`module-icon ${selectedModule.color}`}>
               <selectedModule.icon size={32} />

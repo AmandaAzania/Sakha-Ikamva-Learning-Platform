@@ -1,0 +1,310 @@
+
+.confidence-page {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  color: var(--green);
+  font-weight: 600;
+  padding: 12px 0;
+  margin-bottom: 18px;
+}
+
+.confidence-hero {
+  background: linear-gradient(120deg, #194d35, #326747);
+  color: white;
+  padding: 40px;
+  border-radius: 24px;
+}
+
+.confidence-hero > svg {
+  color: #e5bc60;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.confidence-hero h1 {
+  font-size: 2.5em;
+  margin: 15px 0;
+}
+
+.confidence-hero p {
+  max-width: 650px;
+  color: #e2eee3;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.confidence-hero .primary-button {
+  background: #e5bc60;
+  color: #194d35;
+}
+
+.journey-progress {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px;
+  margin: 25px 0;
+}
+
+.progress-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  color: var(--green);
+  margin-bottom: 18px;
+}
+
+.progress-track {
+  height: 10px;
+  background: #e4ece3;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #326747;
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+
+.journey-progress p {
+  margin-top: 12px;
+  color: var(--muted);
+}
+
+.journey-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.journey-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  text-align: left;
+  padding: 22px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  color: var(--green);
+}
+
+.journey-card:hover {
+  background: #f0f5ef;
+  border-color: #326747;
+}
+
+.journey-number {
+  display: grid;
+  place-items: center;
+  width: 55px;
+  height: 55px;
+  background: #e4efe0;
+  border-radius: 14px;
+  font-size: 1.3em;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.journey-details {
+  flex: 1;
+}
+
+.journey-details h3 {
+  margin-bottom: 6px;
+}
+
+.journey-details p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.activity-panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 35px;
+}
+
+.activity-label {
+  color: var(--green);
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.activity-panel h1 {
+  color: var(--green);
+  font-size: 2em;
+  margin: 15px 0;
+}
+
+.activity-instruction {
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.activity-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 30px 0;
+}
+
+.activity-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 75px;
+  padding: 18px;
+  text-align: left;
+  background: #f5f7f3;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  color: #26382f;
+  line-height: 1.5;
+}
+
+.activity-option svg {
+  flex-shrink: 0;
+}
+
+.activity-option:hover {
+  border-color: #91ad92;
+}
+
+.activity-option.option-selected {
+  background: #e4efe0;
+  border-color: #326747;
+  color: #194d35;
+  font-weight: 600;
+}
+
+.reflection-area {
+  margin: 28px 0;
+}
+
+.reflection-area label {
+  display: block;
+  color: var(--green);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.reflection-area textarea {
+  width: 100%;
+  padding: 18px;
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  background: #f5f7f3;
+  color: #26382f;
+  font: inherit;
+  line-height: 1.8;
+  resize: vertical;
+}
+
+.reflection-area textarea:focus-visible {
+  outline: 3px solid #b48120;
+  outline-offset: 3px;
+}
+
+.reflection-area p {
+  color: var(--muted);
+  font-size: 0.9em;
+  line-height: 1.7;
+  margin-top: 12px;
+}
+
+.activity-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.activity-actions .back-button {
+  margin: 0;
+}
+
+.primary-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.activity-feedback {
+  margin-top: 28px;
+  padding: 30px;
+  border-radius: 18px;
+  background: #e4efe0;
+  color: #194d35;
+}
+
+.activity-feedback h2 {
+  margin: 15px 0;
+}
+
+.activity-feedback p {
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.activity-feedback button {
+  margin: 5px 12px 5px 0;
+}
+
+.high-contrast .journey-card,
+.high-contrast .activity-panel,
+.high-contrast .activity-option,
+.high-contrast .journey-progress {
+  background: white;
+  border: 2px solid #333;
+}
+
+.high-contrast .option-selected {
+  background: #194d35;
+  color: white;
+}
+
+@media (max-width: 650px) {
+  .confidence-hero,
+  .activity-panel {
+    padding: 24px;
+  }
+
+  .confidence-hero h1 {
+    font-size: 1.8em;
+  }
+
+  .activity-options {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-card {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .journey-number {
+    width: 42px;
+    height: 42px;
+  }
+
+  .activity-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
