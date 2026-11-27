@@ -1,0 +1,332 @@
+
+/* ========================================
+   FIND MY VOICE
+======================================== */
+
+.communication-page {
+  --communication-blue: #345c83;
+  --communication-light: #e3ebf7;
+}
+
+/* HERO */
+
+.communication-hero {
+  background: linear-gradient(
+    135deg,
+    #194d35 0%,
+    #285b55 60%,
+    #345c83 100%
+  );
+}
+
+/* ACTIVITY CARDS */
+
+.communication-page .journey-card:nth-child(1) {
+  background: #e3ebf7;
+}
+
+.communication-page .journey-card:nth-child(2) {
+  background: #f6ebd4;
+}
+
+.communication-page .journey-card:nth-child(3) {
+  background: #dfede9;
+}
+
+.communication-page .journey-card:nth-child(4) {
+  background: #efe4f5;
+}
+
+.communication-page .journey-card:nth-child(5) {
+  background: #f4e5d9;
+}
+
+.communication-page .journey-card:nth-child(6) {
+  background: #e4efe0;
+}
+
+.communication-page .journey-card:nth-child(7) {
+  background: #e3ebf7;
+}
+
+.communication-card-top,
+.communication-card-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.communication-card-top > span {
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #526259;
+}
+
+.communication-card-action {
+  margin-top: auto;
+  padding-top: 16px;
+  font-weight: 700;
+  color: #194d35;
+}
+
+.communication-page .progress-fill {
+  background: linear-gradient(
+    90deg,
+    #345c83,
+    #628eae
+  );
+}
+
+/* LISTENING ACTIVITY */
+
+.listening-panel {
+  margin: 30px 0;
+  padding: 28px;
+  border-radius: 22px;
+  background: #e3ebf7;
+  border: 1px solid #cbd9ea;
+  color: #294968;
+}
+
+.listening-panel > svg {
+  margin-bottom: 16px;
+}
+
+.listening-panel h2 {
+  margin-bottom: 18px;
+}
+
+.story-transcript {
+  margin-top: 22px;
+  padding: 18px;
+  background: #ffffff;
+  border-radius: 14px;
+  color: #243d54;
+}
+
+.story-transcript summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.story-transcript p {
+  margin-top: 18px;
+  line-height: 1.9;
+}
+
+/* COMMUNICATION QUESTIONS */
+
+.communication-question {
+  margin-top: 34px;
+}
+
+.question-counter {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 30px;
+  background: #e3ebf7;
+  color: #345c83;
+  font-size: 0.85em;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.communication-question h2 {
+  margin-bottom: 20px;
+  font-size: 1.35em;
+  line-height: 1.6;
+}
+
+.communication-question .activity-options {
+  margin-top: 22px;
+}
+
+/* LEARNING FEEDBACK */
+
+.communication-feedback {
+  margin: 24px 0;
+  padding: 24px;
+  border-radius: 18px;
+  background: #e4efe0;
+  color: #194d35;
+  border: 1px solid #cbdcc7;
+}
+
+.communication-feedback h3 {
+  margin-bottom: 12px;
+}
+
+.communication-feedback p {
+  margin-bottom: 14px;
+  line-height: 1.8;
+}
+
+.communication-feedback button {
+  margin-top: 10px;
+}
+
+/* STORY SEQUENCING */
+
+.sequence-panel {
+  margin-top: 32px;
+}
+
+.sequence-panel h2 {
+  margin-bottom: 18px;
+  font-size: 1.3em;
+}
+
+.sequence-number {
+  min-width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #345c83;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.sequence-preview {
+  background: #f5f7fb;
+  border: 1px solid #d9e2ee;
+  padding: 24px;
+  border-radius: 18px;
+  margin: 24px 0;
+}
+
+.sequence-preview h3 {
+  margin-bottom: 14px;
+  color: #345c83;
+}
+
+.sequence-preview ol {
+  padding-left: 24px;
+}
+
+.sequence-preview li {
+  padding: 8px 0;
+  line-height: 1.7;
+}
+
+/* SPEAKING PRACTICE */
+
+.speaking-panel {
+  margin-top: 32px;
+}
+
+.speaking-panel h2 {
+  margin-bottom: 20px;
+}
+
+.speaking-prompts {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.speaking-prompt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 20px;
+  background: #e3ebf7;
+  color: #294968;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+.prompt-audio {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #345c83;
+  border: 1px solid #cbd9ea;
+  border-radius: 12px;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.prompt-audio:hover {
+  background: #d4e2f0;
+}
+
+.communication-skip {
+  margin-top: 24px;
+}
+
+/* KEYBOARD ACCESSIBILITY */
+
+.communication-page button:focus-visible,
+.communication-page summary:focus-visible,
+.communication-page textarea:focus-visible {
+  outline: 3px solid #345c83;
+  outline-offset: 4px;
+}
+
+/* HIGH CONTRAST */
+
+.high-contrast .communication-hero,
+.high-contrast .communication-page .journey-card,
+.high-contrast .listening-panel,
+.high-contrast .story-transcript,
+.high-contrast .communication-feedback,
+.high-contrast .sequence-preview,
+.high-contrast .speaking-prompt {
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.high-contrast .communication-card-top > span,
+.high-contrast .communication-card-action,
+.high-contrast .sequence-preview h3,
+.high-contrast .communication-page .journey-details h3,
+.high-contrast .communication-page .journey-details p {
+  color: #ffffff;
+}
+
+.high-contrast .communication-page button:focus-visible,
+.high-contrast .communication-page summary:focus-visible,
+.high-contrast .communication-page textarea:focus-visible {
+  outline-color: #ffff00;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+  .listening-panel,
+  .communication-feedback,
+  .sequence-preview {
+    padding: 20px;
+  }
+
+  .communication-question h2 {
+    font-size: 1.15em;
+  }
+
+  .speaking-prompt {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .communication-card-action {
+    font-size: 0.9em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .communication-page *,
+  .communication-page *::before,
+  .communication-page *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

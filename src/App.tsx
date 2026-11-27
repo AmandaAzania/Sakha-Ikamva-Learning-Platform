@@ -1,4 +1,5 @@
 import Confidence from './pages/Confidence'
+import Communication from './pages/Communication'
 import { useState } from 'react'
 import {
   Sprout,
@@ -75,6 +76,10 @@ function App() {
   )
 
   function navigate(page: string) {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel()
+    }
+    setAudioMessage('')
     setActivePage(page)
     setMenuOpen(false)
     window.scrollTo(0, 0)
@@ -284,10 +289,16 @@ function App() {
         )}
 
         {activePage === 'confidence' && (
-  <Confidence onBack={() => navigate('home')} />
-)}
+          <Confidence onBack={() => navigate('home')} />
+        )}
 
-{selectedModule && activePage !== 'confidence' && (
+        {activePage === 'communication' && (
+          <Communication onBack={() => navigate('home')} />
+        )}
+
+        {selectedModule &&
+          activePage !== 'confidence' &&
+          activePage !== 'communication' && (
           <section className="content-panel">
             <div className={`module-icon ${selectedModule.color}`}>
               <selectedModule.icon size={32} />
